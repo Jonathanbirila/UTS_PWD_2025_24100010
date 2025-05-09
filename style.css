@@ -1,0 +1,141 @@
+:root {
+    --pinkmuda :  #f8c8dc;
+    --pinkutama : #ff69b4;
+    --pinktua :  #d04894;
+    --gradient-bg : linear-gradient(to right, #ff69b4,  #d04894);
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: var(--gradient-bg);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: white;
+    color: var(--pinktua);
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header h1 {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100%{
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  
+  }
+
+.btn:hover {
+    background: var(--pinkmuda);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    width: 1300px;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+
+.features {
+    border-top: 1px, dashed, gray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmaX(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-box {
+    background: var(--pinkmuda);
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    width: 235px;
+    height: 210px;
+    opacity: rgba();
+    z-index: 1; 
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: var(--pinkutama);
+    margin-bottom: 20px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+
+.cta {
+    background: var(--pinkmuda);
+    color: 333;
+    text-align: center;
+
+}
+
+footer {
+    background: var(--pinktua);
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
